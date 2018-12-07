@@ -1,0 +1,14 @@
+<!--<h2>My Books</h2>-->
+<!--<ul class="books">-->
+  <li *ngFor="let book of books" (click)="onSelect(book)">
+    <a routerLink="/detailview/{{book.id}}">
+     <!-- <span class="badge">{{book.id}}</span>--> {{book.name}}
+    </a>
+  </li>
+
+  <li *ngFor="let author of authors" (click)="onSelect(author)">
+    <a routerLink="/detailview/{{author.name}}">
+     <!-- <span class="badge">{{book.id}}</span>--> {{author.name}}
+    </a>
+  </li>
+<!--</ul>-->

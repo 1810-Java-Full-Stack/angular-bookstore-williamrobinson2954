@@ -1,0 +1,7 @@
+<div class="grid grid-pad">
+  <a *ngFor="let author of AUTHORS" class="col-1-4" routerLink="/buildlistview/{{author.name}}">
+    <div class="module hero">
+      <h4>{{author.name}}</h4>
+    </div>
+
+  </a>

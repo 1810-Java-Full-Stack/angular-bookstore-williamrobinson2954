@@ -1,0 +1,11 @@
+<button (click)="goBack()">go back</button>
+<div *ngIf="selectedBook">
+  <h2>{{selectedBook.name | uppercase}} Details</h2>
+  <div><span>id: </span>{{selectedBook.id}}</div>
+  <div>
+  <label>name:
+    <input [(ngModel)]="selectedBook.name"  placeholder="name" >
+   
+</label>
+  </div>
+</div>

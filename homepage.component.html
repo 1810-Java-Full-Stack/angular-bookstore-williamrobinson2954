@@ -1,0 +1,16 @@
+<div *ngIf="errorMsg">
+  <h6>
+    Error Message:
+  </h6>
+  <p>{{errorMsg}}</p>
+</div>
+<h3>Books</h3>
+<div class="grid grid-pad">
+  <a *ngFor="let book of books" class="col-1-4" routerLink="/detailview/{{book.id}}">
+    <div class="module hero">
+      <h4>{{book.name}}</h4>
+    </div>
+ 
+
+  </a>
+</div>
